@@ -1,0 +1,77 @@
+/*===>COLORS: 
+rgba(25 25 112 1) midnight blue
+rgba(128 0 0 1) maroon
+rgba(142 56 142 1) sgi beet
+rgba(255 215 0) gold
+*/
+
+body {
+	font-family: 'EB Garamond', serif;
+}
+nav {
+	/*width: 60%;*/
+	/*margin-left: 5%;*/
+	position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: 10000;
+ 	/*padding: 20px 0 0 0;*/top: 20px;
+    left: 5%;
+ 	font-family: 'Roboto', sans-serif;
+ 	font-weight: 700;
+ 	text-align: center;
+ 	font-size: 30px;
+}
+img {
+    border: 0;
+    width: 40%;
+    margin-left: 5%;
+}
+/* unvisited link */
+a:link {
+    color: rgba(25 25 112 1);
+    background-color: none;
+    height: 24px;
+    padding: 1px;
+}
+/* visited link */
+a:visited {
+    color: rgba(25, 25, 112, 1);
+    height: 24px;
+    padding: 1px;
+}
+/* mouse over link */
+a:hover {
+    color: #FFD700;
+    background-color: rgba(205, 173, 0, .5);
+    text-decoration: none;
+    height: 24px;
+    padding: 1px;
+}
+/* selected link */
+a:active {
+    color: #0000FF;
+    height: 24px;
+    padding: 1px;
+}
+ul {
+	list-style: none;
+	padding: 150px 0 100px 0;
+	width: 80%;
+	margin: 0 auto;
+}
+li {
+	padding: 0;
+}
+.clearfix:after {
+    display: table;
+    clear: both;
+}
+#picShow {
+	overflow: scroll;
+}
+.picRandom {
+	margin-left:10%;
+	width: 80%;
+}
+@media screen and (max-width: 768px) {
