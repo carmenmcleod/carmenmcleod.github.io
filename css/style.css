@@ -5,8 +5,20 @@ rgba(142 56 142 1) sgi beet
 rgba(255 215 0) gold
 */
 
+/*=====!!vh= vertical height percentage*/
+
 body {
 	font-family: 'EB Garamond', serif;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e8e843+0,ffffff+100&amp;0.3+0,0.02+99 */
+background: -moz-linear-gradient(left,  rgba(232,232,67,0.3) 0%, rgba(255,255,253,0.02) 99%, rgba(255,255,255,0.02) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(232,232,67,0.3)), color-stop(99%,rgba(255,255,253,0.02)), color-stop(100%,rgba(255,255,255,0.02))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(232,232,67,0.3) 0%,rgba(255,255,253,0.02) 99%,rgba(255,255,255,0.02) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(232,232,67,0.3) 0%,rgba(255,255,253,0.02) 99%,rgba(255,255,255,0.02) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(232,232,67,0.3) 0%,rgba(255,255,253,0.02) 99%,rgba(255,255,255,0.02) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(232,232,67,0.3) 0%,rgba(255,255,253,0.02) 99%,rgba(255,255,255,0.02) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4de8e843', endColorstr='#05ffffff',GradientType=1 ); /* IE6-9 */
+
+
 }
 nav {
 	/*width: 60%;*/
@@ -14,13 +26,21 @@ nav {
 	position: fixed;
     margin: 0;
     padding: 0;
-    z-index: 10000;
+    z-index: 1000;
  	/*padding: 20px 0 0 0;*/top: 20px;
     left: 5%;
  	font-family: 'Roboto', sans-serif;
  	font-weight: 700;
  	text-align: center;
  	font-size: 30px;
+}
+#ground {
+    border: 0;
+    width: 85%;
+    position: fixed;
+    z-index: -10;
+    margin: auto;
+    vh= 85;
 }
 img {
     border: 0;
@@ -29,35 +49,36 @@ img {
 }
 /* unvisited link */
 a:link {
-    color: rgba(25 25 112 1);
+    color: rgba(142, 56, 142, 1);
     background-color: none;
     height: 24px;
     padding: 1px;
 }
 /* visited link */
 a:visited {
-    color: rgba(25, 25, 112, 1);
+    color: rgba(142, 56, 142, 1);
     height: 24px;
     padding: 1px;
 }
 /* mouse over link */
 a:hover {
     color: #FFD700;
-    background-color: rgba(205, 173, 0, .5);
+    background-color: rgba(255, 124, 75, .7);
     text-decoration: none;
     height: 24px;
     padding: 1px;
+    padding-right: 90px;
 }
 /* selected link */
 a:active {
-    color: #0000FF;
+    color: #FF3E96;
     height: 24px;
     padding: 1px;
 }
 ul {
 	list-style: none;
-	padding: 150px 0 100px 0;
-	width: 80%;
+	padding: 0 0 100px 0;
+	width: 90%;
 	margin: 0 auto;
 }
 li {
@@ -71,7 +92,9 @@ li {
 	overflow: scroll;
 }
 .picRandom {
-	margin-left:10%;
-	width: 80%;
+	margin-left:5%;
+    margin-top: 75px;
+    margin-bottom: 75px;
+	width: 90%;
 }
 @media screen and (max-width: 768px) {
